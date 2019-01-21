@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>BrianMcLendon.com</title>
+	<link type="text/css" rel="stylesheet" href="briWeb.css">
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Rasa:300" rel="stylesheet">
+	<link rel="icon" href="././files/images/favicon.ico" />
+</head>
+<body>
+	<div class="topBarOpen" id="topBar_MenuOpenButton" onclick="TopBarMenuAI('open');">&#8801;</div>
+	<div class="topBar" id="topBar">
+		<div class="topBarClose" id="topBar_MenuCloseButton">x</div>
+		<ul>
+			<li>Graphic Artist, Designer, &amp; Developer</li>
+			<li id="sendEmail" onclick="moreTouchAI(this)">
+				<a id="sendEmail">mclendon.brian@gmail.com</a>
+				<div class="email_popuptext" id="email_Popup">
+					<div>Email Brian?</div>
+					<div class="smallYesButton" id="email_Send" onclick="moreTouchAI(this)">YES</div>
+					<div class="smallNoButton" id="email_PopupClose" onclick="moreTouchAI(this)">NO</div>
+				</div>
+			</li>
+			<li>
+				<a href="././files/bMclendonResume2017.pdf">PDF</a>
+				&nbsp;<a href="././files/bMclendonResume2017.docx">DOCX</a>
+				&nbsp;<a id="Resume_PlainText" href="#resume" onclick="createResume()">Plain-Text</a>
+			</li>
+			<li id="viewProjects" title="off" onclick="ProjectsAI('toggle')">&#9650;</li>
+		</ul>
+	</div>
+	<div class="LogoWrapper">
+		<div class="logoBox" id="logoBox" >
+			<div class="logoBG_mask" id="logoBG_mask"></div>
+		</div>
+	</div>
+	<div class="articleWrapper articleWrapper_closed" id="projects">
+		<ul>
+			<li class="articleHolder">
+				<div class="articleHolderTitle" id="articleTitle" style="background-color:#D6EAF8" onclick="moreTouchAI(this)">
+					<p>Abiding Presence Lutheran Church</p>
+					<p>Logo Design</p> 
+				</div>
+				<div class="post phide">
+					<div class="post_wrapper">
+						<p>With vines emanating out from a solid cross structure towards the church's name, my logo reflects the church's slogan: "...Rooted in God's abiding love in Christ".</p>
+						<img src="././files/images/posts/APLC/APLC_1_Notebook.png">
+						<img src="././files/images/posts/APLC/APLC_3_book.png">
+						<img src="././files/images/posts/APLC/APLC_2_logo.png">
+						<img src="././files/images/posts/APLC/APLC_3_book.png">
+					</div>
+					<div class="miniMenu"><ul>
+						<li onclick="scrollToTop();return false">Page Top</li>
+						<li onclick="scrollToItem('APLC','next');">Next Post</li>
+						<li onclick="scrollToItem('APLC','previous');">Previous Post</li></ul>
+					</div>
+				</div>
+			</li>
+			<li class="articleHolder">
+				<div class="articleHolderTitle" id="articleTitle" style="background-color:#c2a89a;" onclick="moreTouchAI(this)">
+					<p>Franklin Machine Products</p>
+					<p>Photography, Layouts, &amp; Design</p> 
+				</div>
+				<div class="post phide">
+					<div class="post_wrapper">
+						<div class="fmpNAV">
+							<div class="active" onclick="fmpAI(1,this,1)">Product Photos</div>
+							<div onclick="fmpAI(1,this,2)">Layouts</div>
+							<div onclick="fmpAI(1,this,3)">Web Ads</div>
+							<div onclick="fmpAI(1,this,4)">Coding</div>
+							<div onclick="fmpAI(1,this,5)">Logos</div>
+							<div onclick="fmpAI(1,this,6)">Sales Contest</div>
+							<div onclick="fmpAI(1,this,7)">Product Mailer</div>
+						</div>
+						<div class="fmpSubNAV">
+							<div class="fmpSubNAV_div_active" onclick="fmpAI(2,this,1)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,2)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,3)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,4)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,5)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,6)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,7)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,8)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,9)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,10)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,11)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,12)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,13)"></div>
+							<div class="fmpSubNAV_div" onclick="fmpAI(2,this,14)"></div>
+						</div>
+						<div class="fmpWrapper">
+							<p>Product Photography</p>
+							<div class ="fmp_work" id="fmp_work1">
+								<div class="fmp_productPhoto_holder">
+									<div class="fmp_productPhoto_ONE"></div>
+								</div>
+							</div>
+							<div class ="fmp_work fmp_onRight" id="fmp_work2"></div>
+						</div>
+					</div>
+					<div class="miniMenu"><ul>
+						<li onclick="scrollToTop();return false">Page Top</li>
+						<li onclick="scrollToItem('FMP','next');">Next Post</li>
+						<li onclick="scrollToItem('FMP','previous');">Previous Post</li></ul>
+					</div>
+				</div>
+			</li>
+			<li class="articleHolder">
+				<div class="articleHolderTitle" id="articleTitle" style="background-color:#e7e3d2;" onclick="moreTouchAI(this)">
+					<p>the Village Studio</p>
+					<p>Design and Layout</p> 
+				</div>
+				<div class="post phide">
+					<div class="post_wrapper">
+						<p>While working for the Village Studio I took care of client graphics work, but I was also aksed to design and illustrate brochures &amp; posters to showcase services.</p>
+						<div class="vsViewButton_holder">
+							Viewing:&nbsp;&nbsp;&nbsp;
+							<div class="vs_selected" id="vs_brochuresButton" onclick="villageStuioAI('b')">Brochures</div>
+							 / 
+							<div class="vs_unselected" id="vs_postersButton" onclick="villageStuioAI('p')">Posters</div>
+						</div>
+						<div class="VS_brochureHolder" id="vs_bHolder">
+							<img class="showVS" src="././files/images/posts/VillageStudio/brochure/vs1.jpg">
+							<img class="showVS" src="././files/images/posts/VillageStudio/brochure/vs2.jpg">
+							<img class="showVS" src="././files/images/posts/VillageStudio/brochure/vs3.jpg">
+							<img class="showVS" src="././files/images/posts/VillageStudio/brochure/vs4.jpg">
+							<img class="showVS" src="././files/images/posts/VillageStudio/brochure/vs5.jpg">
+							<img class="showVS" src="././files/images/posts/VillageStudio/brochure/vs6.jpg">
+							<img class="showVS" src="././files/images/posts/VillageStudio/brochure/vs7-8.jpg">
+							<div class="VS_posterHolder" id="vs_pHolder">
+								<img src="././files/images/posts/VillageStudio/posters/poster1.gif">
+								<img src="././files/images/posts/VillageStudio/posters/poster2.gif">
+							</div>
+							<div class="VS_posterHolder" id="vs_pHolder2">
+								<img src="././files/images/posts/VillageStudio/posters/poster4.jpg">
+								<img src="././files/images/posts/VillageStudio/posters/poster3.jpg">
+							</div>
+						</div>
+					</div>
+					<div class="miniMenu"><ul>
+						<li onclick="scrollToTop();return false">Page Top</li>
+						<li onclick="scrollToItem('VS','next');">Next Post</li>
+						<li onclick="scrollToItem('VS','previous');">Previous Post</li></ul>
+					</div>
+				</div>
+			</li>
+			<li class="articleHolder">
+				<div class="articleHolderTitle" id="articleTitle" style="background-color:#bec3bd;" onclick="moreTouchAI(this)">
+					<p>Princeton CDI</p>
+					<p>Packaging Design</p>
+				</div>
+				<div class="post phide">
+					<div class="post_wrapper">
+						<div class="P_CDI_mockupIMG"></div>
+						<p>The Princeton Child Development Institue asked me to design a minimal packaging layout for their DVD "Adults With Autism: The Journey Home".</p>
+						<div class="P_CDI_largeIMG">
+							<img src="././files/images/posts/P_CDI/dvd_and_case.png"> 
+						</div>
+					</div>
+					<div class="miniMenu"><ul>
+						<li onclick="scrollToTop();return false">Page Top</li>
+						<li onclick="scrollToItem('pCDI','next');">Next Post</li>
+						<li onclick="scrollToItem('pCDI','previous');">Previous Post</li></ul>
+					</div>
+				</div>
+			</li>
+			<li class="articleHolder">
+				<div class="articleHolderTitle" id="articleTitle" style="background-color:#c2bdc3;" onclick="moreTouchAI(this)">
+					<p>Rainbow Alternative</p>
+					<p>Website Design</p> 
+				</div>
+				<div class="post phide">
+					<div class="post_wrapper">
+						<div id="container2">
+							<div id="container1">
+								<div id="col1">
+									<p>This responsive website design uses feeds from Twitter, Instagram, and Flickr, keeping customers up to date with news from the shop.</p>
+									<div class="raViewButton_holder">Viewing:&nbsp;&nbsp;&nbsp;
+										<div class="ra_selected" id="ra_desktopButton"
+										onclick="rainbowAlternativeAI('d')">Desktop Version</div>
+										 / 
+										<div class="ra_unselected" id="ra_mobileButton"
+										onclick="rainbowAlternativeAI('m')">Mobile Version</div>
+									</div>
+									<div class="raImageHolder" id="raIMGs">
+										<div class="raPCdisplay" id="raPCHolder">
+											<div class="raPC_screen" id="raPC_screen">
+												<div class="raPC_screen_inner"></div>
+											</div>
+											<img src="././files/images/posts/RainbowAlternative/rainbowAlternative_pc.png">
+										</div>
+									</div>
+								</div>
+								<div id="col2">
+									<div class="raImageHolder" id="raIMGs2">
+										<div class="raMobiledisplay" id="raMHolder">
+											<div class="raM_screen" id="raM_screen">
+												<div class="raM_screen_inner"></div>
+											</div>
+											<img id="raM_img" src="././files/images/posts/RainbowAlternative/rainbowAlternative_iphone.png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="miniMenu"><ul>
+						<li onclick="scrollToTop();return false">Page Top</li>
+						<li onclick="scrollToItem('RA','next');">Next Post</li>
+						<li onclick="scrollToItem('RA','previous');">Previous Post</li></ul>
+					</div>
+				</div>
+			</li>
+			<li class="articleHolder">
+				<div class="articleHolderTitle" id="articleTitle" style="background-color:#8a99b5;" onclick="moreTouchAI(this)">
+					<p>TeenZombie</p>
+					<p>Games &amp; Software</p>
+				</div>
+				<div class="post phide">
+					<div class="post_wrapper"> </div>
+					<!-- <div class="miniMenu"><ul>
+						<li onclick="scrollToTop();return false">Page Top</li>
+						<li onclick="scrollToItem('webUI','next');">Next Post</li>
+						<li onclick="scrollToItem('webUI','previous');">Previous Post</li></ul>
+					</div> -->
+				</div>
+			</li>
+			<li class="articleHolder">
+				<div class="articleHolderTitle" id="articleTitle" style="background-color:#b58484;" onclick="moreTouchAI(this)">
+					<p>Web &amp; UI</p>
+					<p>Various Interfaces &amp; Websites</p>
+				</div>
+				<div class="post phide" id="webUI">
+					<div class="post_wrapper">
+						<div class="web_or_ui_select">
+							<div class="active" id="web_or_ui_WEB" onclick="web_ui_AI('w', '')">WEB</div>
+							<div id="web_or_ui_UI" onclick="web_ui_AI('u', '')">UI</div>
+						</div>
+						<div class="web_or_ui_menu1">
+							<div class="active" onclick="web_ui_AI('sW', this)">1</div>
+							<div onclick="web_ui_AI('sW', this)">2</div>
+							<div onclick="web_ui_AI('sW', this)">3</div>
+							<div onclick="web_ui_AI('sW', this)">4</div>
+							<div onclick="web_ui_AI('sW', this)">5</div>
+							<div onclick="web_ui_AI('sW', this)">6</div>
+						</div>
+						<div class="web_or_ui_menu2 web_or_ui_HIDEMENU">
+							<div onclick="web_ui_AI('sU', this)">1</div>
+							<div onclick="web_ui_AI('sU', this)">2</div>
+							<div onclick="web_ui_AI('sU', this)">3</div>
+							<div onclick="web_ui_AI('sU', this)">4</div>
+						</div>
+						<div class ="web_or_ui_workHolder">
+							<div class ="web_or_ui_work" id="web_or_ui_work1">
+								<p>Junk In The Trunk LLC</p>
+								<p>I was commissioned to design wireframes, mockup website pages, and a scheduling application for Junk In The Trunk, a New Jersey company specializing in junk removal.</p>
+								<div class ="junkInTheTrunk">
+									<img src="././files/images/posts/Web_n_UI/jitt1.jpg">
+									<div>
+										<img src="././files/images/posts/Web_n_UI/jitt2.png">
+										<img src="././files/images/posts/Web_n_UI/jitt3.png">
+										<img src="././files/images/posts/Web_n_UI/jitt4.png">
+									</div>
+									<div>
+										<img src="././files/images/posts/Web_n_UI/jitt5.png">
+										<img src="././files/images/posts/Web_n_UI/jitt6.jpg">
+									</div>
+									<div>
+										<img src="././files/images/posts/Web_n_UI/jitt7.jpg">
+										<img src="././files/images/posts/Web_n_UI/jitt8.jpg">
+									</div>
+								</div>								
+							</div>
+							<div class ="web_or_ui_work wNu_onRight" id="web_or_ui_work2">
+								<p>should be replaced with title</p>
+								<p>should be replaced with content</p>
+							</div>
+						</div>
+					</div>
+					<div class="miniMenu"><ul>
+						<li onclick="scrollToTop();return false">Page Top</li>
+						<li onclick="scrollToItem('webUI','next');">Next Post</li>
+						<li onclick="scrollToItem('webUI','previous');">Previous Post</li></ul>
+					</div>
+				</div>
+			</li>
+			<li class="articleHolder">
+				<div class="articleHolderTitle" id="articleTitle" style="background-color:#8a99b5;" onclick="moreTouchAI(this)">
+					<p>WebEx</p>
+					<p>Experiments with CSS, HTML, &amp; more</p>
+				</div>
+				<div class="post phide">
+					<div class="post_wrapper"> </div>
+					<!-- <div class="miniMenu"><ul>
+						<li onclick="scrollToTop();return false">Page Top</li>
+						<li onclick="scrollToItem('webUI','next');">Next Post</li>
+						<li onclick="scrollToItem('webUI','previous');">Previous Post</li></ul>
+					</div> -->
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="footerHolder">
+		<div class="footer">©2005-2017 Brian McLendon II</div>
+	</div>
+	<div class="photoZoomHolder pz_closed" id="photoZoom">
+		<div class="pz_zoomButton" onclick="photoZoomAI('zoom')" id="zoomB" title="zoomB" data-content="stretch?"></div>
+		<div class="pz_closeButton" onclick="photoZoomAI('close')" ></div>
+		<p>Image Information</p>
+		<div class="pz_inner" id="pz_inner"></div>
+	</div>
+	<div class="zoomHoverMagic zoomHoverMagic_hidden" id="zMagic"></div>
+
+<script src="briWeb.js"></script>
+</body>
+</html>
